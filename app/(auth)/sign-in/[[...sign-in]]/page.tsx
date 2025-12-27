@@ -5,6 +5,7 @@ import * as Clerk from '@clerk/elements/common'
 import * as SignIn from '@clerk/elements/sign-in'
 import Image from 'next/image';
 import Link from 'next/link';
+import { FcGoogle } from "react-icons/fc";
 
 export default function SignInPage() {
   return (
@@ -28,7 +29,7 @@ export default function SignInPage() {
             name="google"
             className="flex w-full items-center justify-center gap-3 py-2 px-3 rounded-md bg-yellow-400 border-2 border-black shadow-[4px_4px_0_0_#000] active:translate-y-[2px] active:shadow-none font-bold cursor-pointer"
           >
-            <Clerk.Icon name="google" className="size-4 font-press-start" />
+            <Clerk.Connection name="google" className="size-4 font-press-start" />
             Sign in with Google
           </Clerk.Connection>
 
