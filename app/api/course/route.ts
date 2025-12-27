@@ -1,4 +1,4 @@
-import { and, desc, eq } from 'drizzle-orm';
+import { and, desc, eq, asc } from 'drizzle-orm';
 import db from "@/config/db";
 import { CompletedExerciseTable, CourseChaptersTable, CourseTable, EnrolledCourseTable } from "@/config/schema";
 import { NextRequest, NextResponse } from "next/server";
