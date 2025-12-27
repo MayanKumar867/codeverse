@@ -27,7 +27,7 @@ export default function SignUpPage() {
   const [confirm, setConfirm] = useState("");
   const [localError, setLocalError] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: React.MouseEvent<HTMLButtonElement>) => {
     if (password !== confirm) {
       e.preventDefault();
       setLocalError("Password and Confirm Password do not match.");
