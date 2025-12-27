@@ -5,7 +5,7 @@ import * as Clerk from '@clerk/elements/common'
 import * as SignIn from '@clerk/elements/sign-in'
 import Image from 'next/image';
 import Link from 'next/link';
-import { FcGoogle } from "react-icons/fc";
+import { FcGoogle } from "react-icons/fc";   
 
 export default function SignInPage() {
   return (

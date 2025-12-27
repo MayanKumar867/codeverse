@@ -2,21 +2,21 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
+import { FcGoogle } from "react-icons/fc";
 
 // Clerk Elements – Correct imports for Next.js
-import { 
-  Root as SignUpRoot, 
-  Step as SignUpStep 
+import {
+  Root as SignUpRoot,
+  Step as SignUpStep
 } from "@clerk/elements/sign-up";
 
-import { 
+import {
   Field,
   Label,
   Input,
   FieldError,
   Submit,
   Connection,
-  Icon,
   GlobalError
 } from "@clerk/elements/common";
 import Link from "next/link";
@@ -60,9 +60,10 @@ export default function SignUpPage() {
               name="google"
               className="flex w-full items-center justify-center gap-3 py-2 px-3 rounded-md bg-yellow-400 border-2 border-black shadow-[4px_4px_0_0_#000] active:translate-y-[2px] active:shadow-none font-bold"
             >
-              <Icon name="google" className="size-4" />
+              <FcGoogle className="size-4" />
               Sign up with Google
             </Connection>
+
 
             {/* Divider */}
             <div className="w-full flex items-center justify-center gap-[10px] text-gray-500 text-sm">
